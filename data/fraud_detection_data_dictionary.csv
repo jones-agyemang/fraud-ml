@@ -1,0 +1,30 @@
+column_name,dtype,description
+transaction_id,string,Unique transaction identifier
+customer_id,string,Customer identifier
+timestamp,datetime,Transaction timestamp
+amount,float,Transaction amount
+merchant_category,category,Merchant category
+payment_method,category,Payment instrument used
+device_type,category,Origin device type
+channel,category,online / in_store / atm
+is_international,int,1 if cross-border transaction
+country_risk_score,float,Synthetic country risk score from 1-100
+card_present,int,1 if card was physically present
+hour_of_day,int,Hour extracted from timestamp
+day_of_week,int,0=Monday ... 6=Sunday
+customer_age,int,Customer age
+account_tenure_days,int,Days since account opening
+avg_txn_amount_30d,float,Average customer transaction amount over 30 days
+txn_count_24h,int,Transaction count in prior 24 hours
+chargeback_history_count,int,Historical count of chargebacks
+velocity_score,float,Synthetic composite velocity/risk score
+distance_from_home_km,float,Distance from usual customer location
+ip_risk_score,float,Synthetic IP risk score from 1-100
+email_age_days,int,Age of customer email account
+failed_login_count_7d,int,Failed logins in the last 7 days
+new_device,int,1 if transaction came from a new device
+vpn_used,int,1 if VPN use was detected
+proxy_used,int,1 if proxy use was detected
+billing_shipping_mismatch,int,1 if billing and shipping did not match
+merchant_risk_score,float,Synthetic merchant risk score from 1-100
+fraud_label,int,"Target variable: 1=fraud, 0=legitimate"
