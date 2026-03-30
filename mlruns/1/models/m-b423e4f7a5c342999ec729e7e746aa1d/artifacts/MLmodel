@@ -1,0 +1,35 @@
+artifact_path: /Users/jones.agyemang/Projects/fraud-ml/mlruns/1/models/m-b423e4f7a5c342999ec729e7e746aa1d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.25
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.4
+model_id: m-b423e4f7a5c342999ec729e7e746aa1d
+model_size_bytes: 5325410
+model_uuid: m-b423e4f7a5c342999ec729e7e746aa1d
+prompts: null
+run_id: 15980d1b7e4247f7a432981ba866ceb8
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "amount", "required": true}, {"type": "long",
+    "name": "hour", "required": true}, {"type": "long", "name": "day_of_week", "required":
+    true}, {"type": "long", "name": "merchant_encoded", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-03-30 13:03:24.103573'
