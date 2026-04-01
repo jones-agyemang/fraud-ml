@@ -134,7 +134,7 @@ def train_and_log_model(
         print("\nRegistering model in MLflow Model Registry...")
         mlflow.sklearn.log_model(
             sk_model=model,
-            name="model",
+            artifact_path="model",
             registered_model_name="fraud-detection-model",
             input_example=X_train.iloc[:5] # Example input for documentation
         )
